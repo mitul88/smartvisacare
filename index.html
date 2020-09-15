@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Welcome | smartVisaCare</title>
+  </head>
+  <body>
+    <section id="main-section" class="main-section fluid">
+      <nav id="navbar" class="navbar fluid">
+        <div class="hamburger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+        <div class="logo">smartVisacare</div>
+        <ul class="nav-links">
+          <li><a href="#" class="link">Home</a></li>
+          <li><a href="#" class="link">About</a></li>
+          <li><a href="#" class="link">Our Service</a></li>
+          <li><a href="#" class="link">Student Visa</a></li>
+          <li><a href="#" class="link">Our Team</a></li>
+          <li><a href="#" class="link">Contact</a></li>
+        </ul>
+      </nav>
+      <h1 class="main-heading">smartVisaCare</h1>
+      <h3 class="sub-heading">Get expert visa assistance</h3>
+      <p class="intro">
+        smartVisaCare team will help you relieve the tiresome process of visa
+        application
+      </p>
+      <div class="select-box">
+        <p class="select-intro">Destination</p>
+        <select
+          name="country-selection"
+          id="country-selection"
+          onChange="window.location.href=this.value"
+        >
+          <option value="empty">None</option>
+          <option value="./au.html">AUSTRALIA</option>
+          <option value="canada">CANADA</option>
+          <!-- <option value="germany">GERMANY</option> -->
+          <!-- <option value="italy">ITALY</option> -->
+          <option value="india">INDIA</option>
+          <option value="malaysia">MALAYSIA</option>
+          <option value="singapore">SINGAPORE</option>
+          <!-- <option value="sweden">SWEDEN</option> -->
+          <option value="thailand">THAILAND</option>
+          <option value="uk">UK</option>
+          <!-- <option value="usa">USA</option> -->
+        </select>
+      </div>
+    </section>
+
+    <!-- ------------aboutUs------------ -->
+    <section id="about" class="about fluid">
+      <h2 class="section-heading">About Us</h2>
+      <div class="about-content">
+        <div class="about-info">
+          <h3 class="info-heading">We Provide Consular assistance</h3>
+          <p class="info">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae
+            nulla laboriosam quod tempora earum consequuntur voluptas impedit
+            id, asperiores in, quisquam rerum et voluptatem, perferendis laborum
+            sequi adipisci alias magni.
+          </p>
+          <p class="info">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed harum
+            ad itaque est, temporibus saepe! Nostrum quas quae, voluptate
+            dolores possimus facilis eius iure temporibus.
+          </p>
+          <p class="info">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt illo,
+            et corporis iure perspiciatis doloremque suscipit consequuntur ipsam
+            praesentium cumque.
+          </p>
+          <a href="#" target="_blank" class="link-btn">More</a>
+        </div>
+        <div class="about-side">
+          <img src="./img/about-img.jpg" alt="smartVisaCare" class="side-img" />
+        </div>
+      </div>
+    </section>
+
+    <!-- --------------------------service-------------------- -->
+
+    <section id="service" class="service">
+      <h2 class="section-heading service-heading-mobile">Our Services</h2>
+      <div class="upper">
+        <div class="left"></div>
+        <div class="right">
+          <h2 class="section-heading service-heading">Our Services</h2>
+        </div>
+      </div>
+      <!-- avoiding extra padding to the upper section colors by adding fluid class below -->
+      <div class="lower fluid">
+        <div class="service-cards">
+          <div class="card">
+            <h4 class="number-heading">1</h4>
+            <h3 class="card-heading">Visa assistance</h3>
+            <p class="card-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
+              fuga, nemo quae, perferendis deserunt officia minus dolore quos
+              voluptatem, obcaecati aut. Rerum exercitationem, pariatur
+              accusamus doloribus hic similique veritatis delectus? Placeat
+              officia ea nihil ullam deserunt vitae cumque?
+            </p>
+          </div>
+          <div class="card">
+            <h4 class="number-heading">1</h4>
+            <h3 class="card-heading">Study Abroad</h3>
+            <p class="card-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
+              fuga, nemo quae, perferendis deserunt officia minus dolore quos
+              voluptatem, obcaecati aut. Rerum exercitationem, pariatur
+              accusamus doloribus hic similique veritatis delectus? Placeat
+              officia ea nihil ullam deserunt vitae cumque?
+            </p>
+          </div>
+          <div class="card">
+            <h4 class="number-heading">1</h4>
+            <h3 class="card-heading">
+              British Passport application assistance
+            </h3>
+            <p class="card-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptatibus, cupiditate? Ex beatae architecto libero tempora ipsa
+              non, quibusdam perferendis laudantium cum nisi. Maiores cumque
+              quas cum non esse commodi excepturi perspiciatis quasi? Veritatis,
+              tempora voluptates?
+            </p>
+          </div>
+        </div>
+        <p class="service-text">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur
+          repellat explicabo veritatis beatae rem excepturi placeat neque rerum
+          id accusamus?
+        </p>
+        <!-- country select button here -->
+        <div class="select-box service-section-select-box">
+          <select
+            name="country-selection"
+            id="country-selection"
+            onChange="window.location.href=this.value"
+          >
+            <option value="empty">
+              ----Select your country or service----
+            </option>
+            <option value="./au.html">AUSTRALIA</option>
+            <option value="canada">CANADA</option>
+            <!-- <option value="germany">GERMANY</option> -->
+            <!-- <option value="italy">ITALY</option> -->
+            <option value="india">INDIA</option>
+            <option value="malaysia">MALAYSIA</option>
+            <option value="singapore">SINGAPORE</option>
+            <!-- <option value="sweden">SWEDEN</option> -->
+            <option value="thailand">THAILAND</option>
+            <option value="uk">UK</option>
+            <!-- <option value="usa">USA</option> -->
+          </select>
+        </div>
+      </div>
+    </section>
+
+    <!-- -------------------------------healthSafety----------------------------- -->
+    <section id="safety" class="safety fluid">
+      <h2 class="section-heading">Health Safety Measures</h2>
+      <p class="safety-text">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur
+        repellat explicabo veritatis beatae rem excepturi placeat neque rerum id
+        accusamus?
+      </p>
+      <a href="#" target="_blank" class="btn-safety">Learn More</a>
+    </section>
+    <div class="safety-img fluid"></div>
+
+    <!-- ------------------------------contact---------------------- -->
+    <section id="contact" class="contact fluid">
+      <div class="aside">
+        <h3 class="section-heading text-start">Get in Touch</h3>
+        <p class="info">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci
+          dicta cupiditate natus fugiat ratione earum vitae a debitis optio hic?
+        </p>
+      </div>
+      <div class="form-side">
+        <form action="#">
+          <div class="form-line">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" placeholder=" Your full name here" />
+          </div>
+
+          <div class="form-line">
+            <label for="">Email:</label>
+            <input type="email" id="email" placeholder=" Your Email here" />
+          </div>
+
+          <!-- <div class="form-line">
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" placeholder=" +8801XXXXXXXXX" />
+          </div> -->
+
+          <div class="form-line">
+            <label for="country">Visiting Country:</label>
+            <input
+              type="text"
+              id="country"
+              placeholder=" i.e UK, Australia, Canada"
+            />
+          </div>
+
+          <div class="form-line">
+            <label for="purpose">Purpose</label>
+            <input
+              type="text"
+              id="purpose"
+              placeholder=" i.e. Study, Official trip, Work, Visit, Settlement"
+            />
+          </div>
+
+          <div class="form-line">
+            <label for="msg">Your Message:</label>
+            <textarea
+              name="msg"
+              id="msg"
+              rows="10"
+              placeholder="Write your querry here. We will write back to you soon"
+            ></textarea>
+          </div>
+        </form>
+      </div>
+    </section>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
