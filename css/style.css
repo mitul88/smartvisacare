@@ -178,7 +178,7 @@ ul {
 }
 .about-side {
   height: 100%;
-  background-color: rgb(128, 128, 128, 0.2);
+  /* background-color: rgb(128, 128, 128, 0.2); */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -187,12 +187,13 @@ ul {
 .side-img {
   height: 96%;
   width: 96%;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.8);
 }
 
 /* ----------------------------------------------service-------------------------------------- */
 
 .service {
-  min-height: 90vh;
+  min-height: 100vh;
   background: linear-gradient(#0f4675, #0f4675 50%, #fff 50%, #fff 100%);
   display: flex;
   justify-content: center;
@@ -243,7 +244,7 @@ ul {
   left: 0;
   height: 100%;
   width: 100%;
-  background: rgba(232, 232, 232, 0.7);
+  background: rgba(232, 232, 232, 0.8);
   z-index: 1;
 }
 .card-container .card:before {
@@ -579,8 +580,8 @@ ul {
   padding: 20px;
   color: #fff;
 }
-.footer div h2,
-h3 {
+.footer-main,
+.footer-sub {
   margin-bottom: 1rem;
 }
 .footer div p,
@@ -609,7 +610,32 @@ a {
   height: 40px;
 }
 /* ---------------------------------------mediaQuerries--------------------------------------------- */
-
+@media screen and (max-width: 1600px) {
+  .main-heading {
+    font-size: 4.5rem;
+  }
+  .sub-heading {
+    font-size: 2rem;
+  }
+  /* service */
+  .card-container .card {
+    position: relative;
+    width: 330px;
+    padding: 80px 30px 30px;
+  }
+  .card-container .card .num {
+    font-size: 3.5rem;
+    top: 45px;
+  }
+  .card-text {
+    letter-spacing: 1px;
+    line-height: 1rem;
+  }
+  /* footer */
+  .footer-main {
+    font-size: 1.4rem;
+  }
+}
 @media screen and (max-width: 768px) {
   .line {
     width: 30px;
