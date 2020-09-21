@@ -153,8 +153,10 @@ ul {
 /* -----------------------------aboutUs-------------------------------------- */
 
 .about {
+  min-height: 50vh;
   width: 100%;
   padding-bottom: 1.5rem;
+  border-top: 3px solid var(--primary-color);
 }
 .about-content {
   display: flex;
@@ -162,6 +164,7 @@ ul {
 .about-info,
 .about-side {
   width: 50%;
+  height: 100%;
 }
 .about-info {
   padding-top: 4%;
@@ -180,13 +183,14 @@ ul {
   height: 100%;
   /* background-color: rgb(128, 128, 128, 0.2); */
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 2%;
 }
 .side-img {
-  height: 96%;
-  width: 96%;
+  height: 100%;
+  width: 100%;
   box-shadow: 0 5px 25px rgba(0, 0, 0, 0.8);
 }
 
@@ -308,38 +312,6 @@ ul {
 .service-select-box select {
   background-color: #fff;
   color: var(--main-txt-color);
-}
-/* --------------------------------safetySection------------------------------- */
-.safety {
-  width: 100%;
-  padding-bottom: 1.5rem;
-  display: flex;
-  flex-direction: column;
-  align-content: space-around;
-  text-align: center;
-  background-color: var(--primary-color);
-  color: #fff;
-}
-.btn-safety {
-  display: inline-block;
-  max-width: 200px;
-  background-color: transparent;
-  border: 3px solid #fff;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 1.5rem;
-  color: #fff;
-  padding: 8px 10px;
-  text-decoration: none;
-}
-.safety-img {
-  height: 150px;
-  width: 100%;
-  text-emphasis: center;
-  background-image: url(../img/bg-safety.jpg);
-  background-size: cover;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
 }
 
 /* ------------------------------------------contact-------------------------------------------------- */
@@ -619,7 +591,6 @@ a {
   }
   /* service */
   .card-container .card {
-    position: relative;
     width: 330px;
     padding: 80px 30px 30px;
   }
@@ -634,6 +605,106 @@ a {
   /* footer */
   .footer-main {
     font-size: 1.4rem;
+  }
+}
+@media screen and (max-width: 1400px) {
+  /* service */
+  .card-container .card {
+    width: 320px;
+  }
+  /* footer */
+  .footer-main {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 1350px) {
+  /* service */
+  .card-container .card {
+    width: 310px;
+  }
+  .select-box {
+    width: 340px;
+    height: 30px;
+  }
+  .select-box .select-intro {
+    padding: 4px;
+    font-size: 1rem;
+  }
+  .select-box select {
+    padding: 1px 8px;
+    font-size: 1rem;
+  }
+  .service-select-box {
+    width: 100%;
+  }
+  .contact .contact-container .contact-info {
+    width: 300px;
+  }
+  .contact .contact-container .contact-form {
+    margin-left: 140px;
+    padding-left: 200px;
+  }
+  .contact .contact-container .contact-info .info li {
+    font-size: 1.2rem;
+  }
+  .footer-main {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 1280px) {
+  body {
+    font-size: 1rem;
+  }
+  .main-heading {
+    font-size: 4rem;
+  }
+  .sub-heading {
+    font-size: 1.8rem;
+  }
+  .intro {
+    font-size: 1rem;
+  }
+  .service {
+    min-height: 100vh;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .card-container {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .card-container .card {
+    width: 80%;
+    margin: 20px auto;
+    padding: 100px 50px 50px;
+  }
+  .service-select-box {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (max-width: 1150px) {
+  .contact .contact-container .contact-info {
+    width: 280px;
+  }
+  .contact .contact-container .contact-form {
+    margin-left: 140px;
+    padding-left: 180px;
+    width: 80%;
+  }
+  .contact .contact-container .contact-info .info li {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .contact .contact-container .contact-info {
+    display: none;
+  }
+  .contact .contact-container .contact-form {
+    margin-left: 110px;
+    padding-left: 50px;
+    width: 80%;
   }
 }
 @media screen and (max-width: 768px) {
