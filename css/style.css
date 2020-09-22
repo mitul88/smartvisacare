@@ -10,6 +10,7 @@
   --primary-transparent-one: rgba(15, 52, 96, 0.9);
   --primary-transparent-two: rgba(15, 52, 96, 0.3);
   --main-txt-color: #00334e;
+  --text-light: #f6f5f5;
   --bg-primary: #def4f0;
 }
 body {
@@ -40,17 +41,21 @@ ul {
   border-radius: 5px;
   text-align: center;
   background-color: var(--primary-color);
-  color: #fff;
+  color: var(--text-light)
   display: inline-block;
   text-decoration: none;
 }
 .text-start {
   text-align: left;
 }
+.text-secondary {
+  color: #cf7500;
+}
 /* ---------------------------------------------------------navbar---------------------------------------------------- */
 .navbar {
   height: 70px;
   display: flex;
+  justify-content: space-between;
   background: var(--primary-transparent-two);
   z-index: 2;
   position: fixed;
@@ -70,10 +75,39 @@ ul {
   z-index: 2;
 }
 .link {
-  color: #fff;
-  text-decoration: none;
+  color: var(--text-light);
+  font-weight: bolder;
+  letter-spacing: 1px;
+  position: absolute;
+  margin-top: -10px;
+  padding-bottom: 2px;
 }
-
+.link:hover {
+  transition: all;
+  transition: 0.5s;
+  transition-timing-function: ease-out;
+  transform: scale(1.1);
+}
+.link:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%) scale(0);
+  -webkit-transform: translateX(-50%) scale(0);
+  transform-origin: 50% 50%;
+  -webkit-transform-origin: 50% 50%;
+  width: 100%;
+  height: 3px;
+  background-color: #cf7500;
+  transition: transform 0.5s;
+  transition-timing-function: ease-out;
+  -webkit-transition: transform 0.5s;
+}
+.link:hover:after {
+  transform: translateX(-50%) scaleX(1);
+  -webkit-transform: translateX(-50%) scaleX(1);
+}
 /* -----------------------------------------------------mainSection--------------------------------------------- */
 
 .main-section {
@@ -133,7 +167,7 @@ ul {
 .select-box .select-intro {
   background-color: var(--primary-color);
   padding: 10px 10px;
-  color: #fff;
+  color: var(--text-light);
 }
 .select-box select {
   background: rgba(15, 52, 96, 0.5);
@@ -144,7 +178,7 @@ ul {
   font-size: 1.1rem;
   line-height: 1.5;
   letter-spacing: 2px;
-  color: #fff;
+  color: var(--text-light);
   margin-left: 0;
   -webkit-appearance: button;
   cursor: pointer;
@@ -205,10 +239,10 @@ ul {
   flex-direction: column;
 }
 .service-heading {
-  color: #fff;
+  color: var(--text-light);
 }
 .service-text {
-  color: #fff;
+  color: var(--text-light);
   text-align: center;
   padding-bottom: 2rem;
 }
@@ -281,7 +315,7 @@ ul {
 }
 .card-container .card:hover .num {
   opacity: 1;
-  color: #fff;
+  color: var(--text-light);
   transform: translateY(-40px);
 }
 .card-container .card .card-heading {
@@ -300,7 +334,7 @@ ul {
 }
 .card-container .card:hover .card-heading,
 .card-container .card:hover .card-text {
-  color: #fff;
+  color: var(--text-light);
 }
 .service-select-box {
   position: relative;
@@ -310,7 +344,7 @@ ul {
   box-shadow: none;
 }
 .service-select-box select {
-  background-color: #fff;
+  background-color: var(--text-light);
   color: var(--main-txt-color);
 }
 
@@ -354,7 +388,7 @@ ul {
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.5);
 }
 .contact .contact-container .contact-info h2 {
-  color: #fff;
+  color: var(--text-light);
   font-size: 1.5rem;
   font-weight: 500;
 }
@@ -386,7 +420,7 @@ ul {
   opacity: 0.5;
 }
 .contact .contact-container .contact-info .info li span:nth-child(2) {
-  color: #fff;
+  color: var(--text-light);
   margin-left: 10px;
   font-weight: 300;
   opacity: 0.5;
@@ -413,7 +447,7 @@ ul {
   text-decoration: none;
 }
 .contact .contact-container .contact-info .icons li a .s-icon {
-  color: #fff;
+  color: var(--text-light);
   opacity: 0.5;
   padding-right: 20px;
   font-size: 3.2rem;
@@ -527,7 +561,7 @@ ul {
   position: relative;
   cursor: pointer;
   background: var(--main-txt-color);
-  color: #fff;
+  color: var(--text-light);
   border: none;
   max-width: 150px;
   padding: 12px;
@@ -542,7 +576,7 @@ ul {
 }
 /* ------------------------------------footer--------------------------------------------------- */
 .footer {
-  border-top: 2px solid #fff;
+  border-top: 2px solid var(--text-light);
   background: var(--primary-color);
   display: flex;
   flex-wrap: wrap;
@@ -550,7 +584,7 @@ ul {
 .footer div {
   width: 20%;
   padding: 20px;
-  color: #fff;
+  color: var(--text-light);
 }
 .footer-main,
 .footer-sub {
@@ -576,7 +610,7 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: #fff;
+  color: var(--text-light);
   background-color: var(--primary-color);
   border-top: 1px solid #2196f3;
   height: 40px;
@@ -711,7 +745,7 @@ a {
   .line {
     width: 30px;
     height: 3px;
-    background: #fff;
+    background: var(--text-light);
     margin: 5px;
   }
   .navbar {
