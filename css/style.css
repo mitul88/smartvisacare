@@ -8,7 +8,7 @@
 :root {
   --primary-color: #0f3460;
   --primary-transparent-one: rgba(15, 52, 96, 0.9);
-  --primary-transparent-two: rgba(15, 52, 96, 0.3);
+  --primary-transparent-two: rgba(15, 52, 96, 0.9);
   --main-txt-color: #00334e;
   --text-light: #f6f5f5;
   --bg-primary: #def4f0;
@@ -41,7 +41,7 @@ ul {
   border-radius: 5px;
   text-align: center;
   background-color: var(--primary-color);
-  color: var(--text-light)
+  color: var(--text-light);
   display: inline-block;
   text-decoration: none;
 }
@@ -56,15 +56,19 @@ ul {
   height: 70px;
   display: flex;
   justify-content: space-between;
-  background: var(--primary-transparent-two);
-  z-index: 2;
+  z-index: 3;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
+  transition: 0.6s;
+}
+nav.nav-change {
+  background: var(--primary-transparent-two);
   box-shadow: 0 0px 40px rgba(0, 0, 0, 0.8);
 }
 .nav-links {
+  position: relative;
   display: flex;
   list-style: none;
   width: 50%;
@@ -74,13 +78,21 @@ ul {
   margin-left: auto;
   z-index: 2;
 }
+.nav-links > li {
+  position: relative;
+}
 .link {
-  color: var(--text-light);
+  position: relative;
+  font-size: 1.1rem;
   font-weight: bolder;
   letter-spacing: 1px;
   position: absolute;
   margin-top: -10px;
   padding-bottom: 2px;
+  transition: 0.6s;
+}
+nav.nav-change .link {
+  color: var(--text-light);
 }
 .link:hover {
   transition: all;
@@ -119,6 +131,7 @@ ul {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  position: relative;
 }
 
 .main-section:before {
@@ -128,7 +141,7 @@ ul {
   right: 0;
   width: 100%;
   height: 90vh;
-  background: rgba(232, 232, 232, 0.4);
+  background: rgba(232, 232, 232, 0.5);
   z-index: 1;
 }
 
@@ -153,16 +166,15 @@ ul {
   font-size: 1.2rem;
   font-weight: 600;
   letter-spacing: 2px;
-  margin-top: 15px;
+  margin-top: 35px;
   max-width: 600px;
 }
 .select-box {
-  margin-top: 15px;
+  margin-top: 35px;
   width: 400px;
   display: flex;
   z-index: 1;
   box-shadow: 0 5px 25px rgba(0, 0, 0, 0.8);
-  background-color: transparent;
 }
 .select-box .select-intro {
   background-color: var(--primary-color);
@@ -170,7 +182,7 @@ ul {
   color: var(--text-light);
 }
 .select-box select {
-  background: rgba(15, 52, 96, 0.5);
+  background: rgba(104, 128, 156, 0.5);
   padding: 3px 10px;
   width: 100%;
   height: 100%;
@@ -178,7 +190,7 @@ ul {
   font-size: 1.1rem;
   line-height: 1.5;
   letter-spacing: 2px;
-  color: var(--text-light);
+  /* color: var(--text-light); */
   margin-left: 0;
   -webkit-appearance: button;
   cursor: pointer;
@@ -372,7 +384,7 @@ ul {
   min-width: 1100px;
   min-height: 550px;
   display: flex;
-  z-index: 5;
+  /* z-index: 1; */
 }
 .contact .contact-container .contact-info {
   position: absolute;
