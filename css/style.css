@@ -61,7 +61,7 @@ ul {
   top: 0;
   left: 0;
   right: 0;
-  transition: 0.6s;
+  transition: 1.8s;
 }
 nav.nav-change {
   background: var(--primary-transparent-two);
@@ -89,7 +89,7 @@ nav.nav-change {
   position: absolute;
   margin-top: -10px;
   padding-bottom: 2px;
-  transition: 0.6s;
+  transition: 1.8s;
 }
 nav.nav-change .link {
   color: var(--text-light);
@@ -117,8 +117,8 @@ nav.nav-change .link {
   -webkit-transition: transform 0.5s;
 }
 .link:hover:after {
-  transform: translateX(-50%) scaleX(1);
-  -webkit-transform: translateX(-50%) scaleX(1);
+  transform: translateX(-50%) scaleX(1.1);
+  -webkit-transform: translateX(-50%) scaleX(1.1);
 }
 /* -----------------------------------------------------mainSection--------------------------------------------- */
 
@@ -165,7 +165,8 @@ nav.nav-change .link {
 .intro {
   font-size: 1.2rem;
   font-weight: 600;
-  letter-spacing: 2px;
+  letter-spacing: 3px;
+  line-height: 1.8rem;
   margin-top: 35px;
   max-width: 600px;
 }
@@ -202,7 +203,7 @@ nav.nav-change .link {
   min-height: 50vh;
   width: 100%;
   padding-bottom: 1.5rem;
-  border-top: 3px solid var(--primary-color);
+  /* border-top: 3px solid var(--primary-color); */
 }
 .about-content {
   display: flex;
@@ -352,7 +353,7 @@ nav.nav-change .link {
   position: relative;
   margin-top: 20px;
   width: 90%;
-  z-index: 3;
+  z-index: 2;
   box-shadow: none;
 }
 .service-select-box select {
@@ -731,6 +732,9 @@ a {
   }
 }
 @media screen and (max-width: 1150px) {
+  .nav-links {
+    width: 80%;
+  }
   .contact .contact-container .contact-info {
     width: 280px;
   }
@@ -744,13 +748,29 @@ a {
   }
 }
 @media screen and (max-width: 1100px) {
+  .contact .contact-container {
+    min-width: 1000px;
+    min-height: 500px;
+    margin-left: -60px;
+  }
   .contact .contact-container .contact-info {
     display: none;
   }
   .contact .contact-container .contact-form {
     margin-left: 110px;
     padding-left: 50px;
-    width: 80%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .contact .contact-container {
+    min-width: 900px;
+    min-height: 500px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .contact .contact-container {
+    min-width: 800px;
+    min-height: 450px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -782,14 +802,14 @@ a {
     width: 100%;
     flex-direction: column;
     z-index: 2;
-    clip-path: circle(100px at 90% -15%);
-    -webkit-clip-path: circle(100px at 90% -15%);
+    clip-path: circle(100px at 90% -25%);
+    -webkit-clip-path: circle(100px at 90% -25%);
     transition: all 1s ease-out;
     pointer-events: none;
   }
   .nav-links.open {
-    clip-path: circle(1000px at 90% -15%);
-    -webkit-clip-path: circle(1000px at 90% -15%);
+    clip-path: circle(1200px at 90% -25%);
+    -webkit-clip-path: circle(1200px at 90% -25%);
     pointer-events: all;
   }
   .main-section {
@@ -799,8 +819,9 @@ a {
   .nav-links li {
     opacity: 0;
   }
-  .nav-links li a {
+  .nav-links li .link {
     font-size: 1.2rem;
+    color: var(--text-light);
   }
   .nav-links li:nth-child(1) {
     transition: all 0.5s ease 0.2s;
