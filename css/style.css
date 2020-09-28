@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway&family=Roboto+Condensed&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400&family=Yanone+Kaffeesatz&display=swap");
 
 * {
   margin: 0;
@@ -175,7 +176,8 @@ nav.nav-change .logo {
   letter-spacing: 2px;
 }
 .intro {
-  font-size: 1.2rem;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.4rem;
   font-weight: 600;
   letter-spacing: 3px;
   line-height: 1.8rem;
@@ -191,8 +193,11 @@ nav.nav-change .logo {
 }
 .select-box .select-intro {
   background-color: var(--primary-color);
-  padding: 10px 10px;
+  padding: 5px 10px;
   color: var(--text-light);
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-size: 1.5rem;
+  font-weight: lighter;
 }
 .select-box select {
   background: rgba(104, 128, 156, 0.5);
@@ -226,17 +231,24 @@ nav.nav-change .logo {
   height: 100%;
 }
 .about-info {
-  padding-top: 4%;
-  padding-bottom: 4%;
+  padding-top: 5%;
+  padding-bottom: 5%;
   padding-right: 5%;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 .about-info .info {
   text-align: justify;
   margin-top: 1%;
   margin-bottom: 1%;
+}
+.offer-list {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: square;
+  margin-top: 15px;
+  font-size: 0.8rem;
 }
 .about-side {
   height: 100%;

@@ -1,5 +1,16 @@
 /* ---------------------------------------mediaQuerries--------------------------------------------- */
-@media screen and (max-width: 1600px) {
+@media screen and (min-width: 1600px) {
+  body {
+    font-size: 1.1rem;
+  }
+  .about {
+    font-size: 1.6rem;
+  }
+  .offer {
+    font-size: 1.1rem;
+  }
+}
+@media screen and (max-width: 1599px) {
   .main-heading {
     font-size: 4.5rem;
   }
@@ -191,7 +202,7 @@
     height: 80vh;
   }
   .main-section:before {
-    height: 70vh;
+    height: 80vh;
   }
   .about-info {
     width: 100%;
